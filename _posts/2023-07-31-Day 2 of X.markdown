@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Day 2 of X"
+date:   2023-07-31
+categories: xdays
+---
+**Goal**
+Yesterday we worked out where to find the Lotto numbers, and for a number of draws. Today we're going to stuck with just the 1 draw and try and get a graph output by the end.
+
+**Step 1**
+Let's get one result into a dataframe. We'll use the DrawNumber to keep things identifiable
+
+Also if we're going to try and do any kind of graph
+```python
+pip install matplotlib
+```
+We're not going to be wedded to matplotlib, but for now it will be just fine for what we want to do
+
+**Step 2**
+Lets see. Ignoring the bonus, there are 47 numbers that you can choose from. So if I wanted to put that into groups of 6 we would need 8 different bins?
+
+**New Plan**
+Plotting this the way that I want it is going to take quite a bit of annoying work. So, ummm, just to do something, let's see what happens when we try and take 5 sets of results. My new interim goal is to try and get a dataframe with the numbers from the last 5 draws
+
+Ok, getting complicated. Needed to redo the model using the wonderful json to pydantic website. Now let's see what happens.
+
+Ok this one isn't going well. Back to the drawing board tomorrow. Or, maybe just a new project, but I think I'd rather keep working on how to parse some annoying XML docs.
+
+**Extra**
+```python
+parsed_xml = parsed_xml["ArrayOfDrawResult"]["DrawResult"]
+```
+A little bit of fiddling around with how the data was parsed gets me a dataframe with the dates of the draw (with far too much information, gonna need to just make it a date and lose all the timestamp info) and the value of all 7 balls. Definite progress after a cup of coffee
+```python
+df = pd.DataFrame()
+for res in draw_result:
+    res: LottoModel
+    date = res.DrawDate
+    vals = [elem.Number for elem in res.Numbers.DrawNumber]
+    df[date] = vals
+```
+I am sure that there is a neater way of doing that, but, screw it, it works.

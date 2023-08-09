@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Day 5 of X"
+date:   2023-08-03
+categories: xdays
+---
+**Problem**  
+So what's next. My concern with X days of Code was that I wouldn't find anything that I was excited to work on. Or something that would take up enough time and pose interesting problems.
+
+Most of what I use python for is solving problems in my day to day life, in particular problems cause by work. But I'm not working. Which means I don't really have very many day to day problems. You see the problem.
+
+**Plan**  
+So what to do . Ok, there's a few things. First, and it's a silly project that is retreading old ground. But I'm going to update my timesheet program to use textual and mongodb.
+And rather than pandas, I'll break out polars to see how well it can read from a database and do some simple data manipulation and groupby / pivot table stuff. I also need it to export to excel so we can find out if that works
+
+**First Step**  
+Textual has some tutorials on design and also has a sample project with a stopwatch which can easily be copied and modified. That's my goal for Day 6. To get a layout coded up and the front end working nicely

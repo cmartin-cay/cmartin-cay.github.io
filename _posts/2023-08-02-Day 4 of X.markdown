@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Day 4 of X"
+date:   2023-08-02
+categories: xdays
+---
+**Goal**  
+No coding today. At least nothing intentional. Today is about getting a spare laptop up and running with a pi-hole, getting plex set up on the system to act as a media server, and setting up some type of remote desktop access.
+
+This should be head bangingly hard as the laptop is running Linux, and the other machines are Windows and Mac. So, I really am the most OS indifferent person out there.

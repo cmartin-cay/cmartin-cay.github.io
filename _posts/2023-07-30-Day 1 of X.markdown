@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Day 1 of X"
+date:   2023-07-30
+categories: xdays
+---
+
+**Goal**
+Something simple and silly. Get the Irish Lotto results, put them into a histogram and take a look at some data that won't be of any use. So 
+
+```python
+pip install pandas jupyterlab
+```
+
+**First Step**
+Get some date. Well it turns out that finding data for the Lotto results is much trickier than I expected. An inauspicious start.	
+
+Progress? I've found an undocumented api. An api can only mean one thing
+```python
+pip install pydantic requests
+```
+Two things, I'd forgotten about the excellent https://jsontopydantic.com/ ......oh god it comes back as XML. XML??? Really? Can pydantic deal with xml? Ok that was a rabbit hole. Let's try
+```python
+pip install xmltodict
+```
+Ok, borrowing/stealing some sample code and feeding it to the website does give me some json that can be converted to pydantic. I think we're ready for
+
+**Second Step**
+This is the do something useful step of the process. Ok, I have the results for one draw put into a pydantic model. Umm, that's something kind of useful?
+```python
+r = requests.get(request_body)  
+parsed_xml = xmltodict.parse(r.text)  
+draw_result = LottoModel(**parsed_xml)
+```
+And then just to get something a little useful for the start of today, lets take a look at the 6 winning numbers and the bonus (not sure how to display results just yet, so take my word for it that this does work, clumsy though it may look)
+```python
+results = [elem.Number for elem in draw_result.ArrayOfDrawResult.DrawResult.Numbers.DrawNumber]
+```

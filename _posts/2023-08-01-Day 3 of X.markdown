@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Day 3 of X"
+date:   2023-08-01
+categories: xdays
+---
+**Goal**  
+Just messing around with some plots to try and get something resembling a polar chart. This is going to get done in Jupyter labs
+
+It's trickier than you'd think to get matplotlib to make a polar chart with anything that isn't shown as a 360<sup>o</sup> circle. Maybe it's got something to do with the axes labels.
+
+Nuts to `matplotlib` I never liked it anyway.
+
+**Plotly**  
+Something different. Lets see. No that sucked. New plan. Back to `matplotlib`. It's fine. Never had anything against it. I wonder how you change the value of the axes labels. Which, is where I was about 30 minutes ago
+
+**Failure**  
+Ok. I give up. The charting element of this is going to defeat me. Charts are annoyingly hard. 
+But over all I learned a few things about xml and some tools to convert an xml api feed into pydantic and to work with it. So, a failure on my original plan but not a complete failure. 
