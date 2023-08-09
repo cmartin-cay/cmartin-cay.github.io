@@ -23,7 +23,7 @@ email: colin.martin+pages@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
    X Days of Code, because I don't have a fixed number in mind  
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://github.com/cmartin-cay/cmartin-cay.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  cmartin-cay
 
