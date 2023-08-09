@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Day 6 of X"
+date:   2023-08-07
+categories: xdays
+---
+**Goal**  
+Lets start working on this new timesheet app. First up, `pip install textual-dev` Let's get some kind of a layout sorted out
+
+
+Ok that's rubbish, but it will work for now
+
+**Build it**  
+Ok - off to Textual to work out how on earth to even create this.
+
+Well, some of it is built. It's a basis with some of the stuff I need. It's good enough for today
