@@ -9,13 +9,9 @@ Lets start working on this new timesheet app. First up, `pip install textual-dev
 
 ![timer_01](https://github.com/cmartin-cay/cmartin-cay.github.io/assets/17892867/27f8994c-6a70-481d-acdc-cb3c56921ef5)
 
-![timer](https://github.com/cmartin-cay/cmartin-cay.github.io/blob/0f95925f2ce812ba188cc48b19d766158ba5656d/assets/timer_01.png)
-
 Ok that's rubbish, but it will work for now
 
 **Build it**  
 Ok - off to Textual to work out how on earth to even create this.
 
 Well, some of it is built. It's a basis with some of the stuff I need. It's good enough for today
-
-![timer2](assets/timer_01.png)
