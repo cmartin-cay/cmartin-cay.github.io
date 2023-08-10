@@ -7,7 +7,7 @@ categories: xdays
 **Goal**  
 Lets start working on this new timesheet app. First up, `pip install textual-dev` Let's get some kind of a layout sorted out
 
-<img alt="timer_01.png" src="https://github.com/cmartin-cay/cmartin-cay.github.io/blob/main/assets/timer_01.png"/>
+![timer_01](https://github.com/cmartin-cay/cmartin-cay.github.io/assets/17892867/27f8994c-6a70-481d-acdc-cb3c56921ef5)
 
 Ok that's rubbish, but it will work for now
 
